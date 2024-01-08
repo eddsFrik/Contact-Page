@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Be Vietnam Pro');
+
+$buttonText: #4036A9;
+$inputColor: #111729;
+$backgroundCard: #CDD5E0;
+$text: #F8FAFC;
+$largeFont: 4rem;
+$headerFont: 2rem;
+$bodyFont: 1rem;
+$labelFont: 0.875rem;
+$buttonFont: 1.25rem;
+$font: 'Be Vietnam Pro';
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+@mixin input__style {
+    padding: 1rem;
+    height: 4rem;
+    outline: none;
+    font-family: $font;
+    font-size: $bodyFont;
+    color: $inputColor;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+}
+
+html {
+    body {
+        height: 100vh;
+        background-image: url('/assets/bg-image.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: $font;
+        color: $text;
+    }
+}
+
+.header__logo {
+    padding-left: 2rem;
+}
+
+.wrapper {
+    text-align: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+
+    .tittle {
+        font-size: $largeFont;
+    }
+
+    .paragraph {
+        font-size: $headerFont;
+    }
+}
+
+form {
+    width: 49rem;
+    background-color: rgba(205, 213, 224, 0.35);
+    border-radius: 12px;
+    border: none;
+    padding: 1.25rem;
+    margin: 0 auto;
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem 1.3rem;
+}
+
+label {
+    font-size: $labelFont;
+    padding: 3px;
+}
+
+
+.input__wrap {
+    @include flex;
+}
+
+input[type=email] {
+    @include input__style;
+}
+
+input[type=text] {
+    @include input__style;
+}
+
+select {
+    @include input__style;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    border: none;
+    background: #fff;
+    font-family: $font;
+    color: $buttonText;
+    font-size: $buttonFont;
+    padding: 0.75rem 1.25rem;
+    margin-top: 0.5rem;
+    border-radius: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 900;
+    height: 4rem;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 12px;
+    resize: none;
+    color: $inputColor;
+    font-family: $font;
+    padding: 1rem;
+    border: none;
+    font-weight: 900;
+}
+
+.message__wrap {
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        width: 50%;
+        margin: 0 auto;
+        .tittle {
+            font-size: 3rem;
+        }
+        .paragraph {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+    }
+    form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .wrapper {
+        width: 70%;
+        margin: 0 auto;
+        .tittle {
+            font-size: 3rem;
+        }
+        .paragraph {
+            font-size: 1.75rem;
+        }
+    }
+    .input__wrap {
+        width: 100%;
+    }
+    form {
+        width: 80%;
+    }
+}
