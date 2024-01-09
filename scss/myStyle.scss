@@ -47,7 +47,7 @@ html {
 }
 
 .header__logo {
-    padding-left: 2rem;
+    padding: 1.3rem 0 0 2.25rem;
 }
 
 .wrapper {
@@ -57,6 +57,7 @@ html {
 
     .tittle {
         font-size: $largeFont;
+        padding-top: 1rem;
     }
 
     .paragraph {
