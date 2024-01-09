@@ -15,7 +15,7 @@ html body {
 }
 
 .header__logo {
-  padding: 1.3rem 0 0 2.25rem;
+  padding: 1.3rem 0 0 2.75rem;
 }
 
 .wrapper {
@@ -25,10 +25,10 @@ html body {
 }
 .wrapper .tittle {
   font-size: 4rem;
-  padding-top: 1rem;
 }
 .wrapper .paragraph {
   font-size: 2rem;
+  margin-bottom: 3.5rem;
 }
 
 form {

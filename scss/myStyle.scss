@@ -47,7 +47,7 @@ html {
 }
 
 .header__logo {
-    padding: 1.3rem 0 0 2.25rem;
+    padding: 1.3rem 0 0 2.75rem;
 }
 
 .wrapper {
@@ -57,11 +57,11 @@ html {
 
     .tittle {
         font-size: $largeFont;
-        padding-top: 1rem;
     }
 
     .paragraph {
         font-size: $headerFont;
+        margin-bottom: 3.5rem;
     }
 }
 
